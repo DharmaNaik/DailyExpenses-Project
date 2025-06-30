@@ -4,13 +4,17 @@ Developer has chosen the database MySQL. Hence, we are trying to install it up a
 
 **developer will tell DevOps engineer that which Versions of the DB Software is used,as a DevOps engineer we have to install that version in DB server**
 
-Before installing any version,we have to disable older version.below command will disables the default MySQL module stream that comes with your RHEL-based system (like CentOS, AlmaLinux, Rocky Linux).
+*1.Before installing any version,we have to disable older version.*
+
+below command will disables the default MySQL module stream that comes with your RHEL-based system (like CentOS, AlmaLinux, Rocky Linux).
 ```
 dnf module disable mysql -y
 ```
 Above command Explanation:
 dnf    It is the package manager for RHEL-based Linux distributions,Used to install, update, remove, and manage software packages.
+
 -y     Stands for "yes to all prompts"
+
 module It's used when a package like MySQL, PHP, or Node.js has more than one version.
 
 Here developer opted mySQL 8.0 Version.so we have to enable 8.0 version.below command will 
